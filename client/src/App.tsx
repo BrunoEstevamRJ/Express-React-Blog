@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import './App.css'
 import axios from 'axios'
+import { AppRoutes } from './routes/Routes'
 
 
 class App extends Component {
-  constructor(props) {
+  constructor(props: {} | Readonly<{}>) {
     super(props)
 
     axios.get('/postagens').then(resultado => { console.log(resultado) })
@@ -12,9 +13,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
-        <h1>Frontend</h1>
-      </div>
+     <AppRoutes />
     )
   }
 }
