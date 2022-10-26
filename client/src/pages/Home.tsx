@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { InputPostagens } from "../postagens/components/inputPostagens";
+import { InputPost } from "./postagens/components/inputTextArea";
 
 export function Home() {
   return (
@@ -16,6 +18,14 @@ export function Home() {
 
           </h2>
           <h3>aqui eu vou editar alguma coisa para demonstrar um texto na pagina</h3>
+
+          <InputPost label={""} value={""} placeholder={""} onChange={function (newValue: string): void {
+            throw new Error("Function not implemented.");
+          } } />         
+
+        </div>
+        <div>
+         
         </div>
       </nav>
     </div>

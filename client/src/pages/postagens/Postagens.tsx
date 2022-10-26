@@ -66,8 +66,8 @@ export const Postagens = () => {
                         /> {" "}
                     </label> */}
 
-                    <div id="entrar">
-                        <button type="button" onClick={handleEntrar}>Enviar</button>
+                    <div id="enviar">
+                        <button type="submit" >Enviar</button>
                     </div>
 
                 </form>
