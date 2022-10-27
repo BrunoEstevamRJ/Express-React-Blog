@@ -10,7 +10,9 @@ export function Home() {
       <nav>
 
         <Link to="/login">Login</Link> |{" "}
+        <Link to="/postagens">Postagem</Link> |{" "}
         <Link to="/home/about">About</Link>
+        
 
         <div id="texto">
           <h2>
@@ -19,9 +21,9 @@ export function Home() {
           </h2>
           <h3>aqui eu vou editar alguma coisa para demonstrar um texto na pagina</h3>
 
-          <InputPost label={""} value={""} placeholder={""} onChange={function (newValue: string): void {
+          {/* <InputPost label={""} value={""} placeholder={""} onChange={function (newValue: string): void {
             throw new Error("Function not implemented.");
-          } } />         
+          } } />          */}
 
         </div>
         <div>

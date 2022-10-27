@@ -5,30 +5,10 @@ import { InputPost } from "./components/inputTextArea";
 
 
 export const Postagens = () => {
-    const inputPostagensRef = useRef<HTMLInputElement>(null);
-    const inputPostRef = useRef<HTMLTextAreaElement>(null);
-
+    //const inputPostagensRef = useRef<HTMLInputElement>(null);
+    //const inputPostRef = useRef<HTMLTextAreaElement>(null);
     const [autor, setAutor] = useState('');
     const [post, setPost] = useState('');
-
-    const autorLength = useMemo(() => {
-        return autor.length * 1000;
-    }, [autor.length]);
-
-    const handleEntrar = useCallback(() => {
-        console.log(autor)
-        console.log(post)
-    }, [autor, post])
-
-
-
-    useEffect(() => {
-        console.log(autor);
-        console.log(post);
-    }, [autor, post]);
-
-
-
 
     return (
         <div>
@@ -43,35 +23,23 @@ export const Postagens = () => {
             <div id="formulario-postagens">
                 <form>
                     <div id="autor">
-                        <h1>{autor}</h1>
+                        
                     </div>
-                  
+
                     <div id='comments'>
                         <InputPost
                             label={""}
                             value={post}
                             type="text" 
                             placeholder={""} 
-                            onChange={newValue => setPost(newValue)}                    />
-
+                            onChange={newValue => setPost(newValue)}                       />
                     </div>
-
-                    {/* <label>
-                        <input
-                            value={password}
-                            ref={inputPasswordRef}
-                            onChange={e => setPassword(e.target.value)}
-                            type="password"
-                            placeholder="Password"
-                        /> {" "}
-                    </label> */}
 
                     <div id="enviar">
                         <button type="submit" >Enviar</button>
                     </div>
-
                 </form>
-            </div>
+            </div>            
         </div>
     );
 }

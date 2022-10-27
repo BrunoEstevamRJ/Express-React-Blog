@@ -10,7 +10,8 @@ interface IInputPostProps {
 
 export const InputPost: React.FC<IInputPostProps> = (props) => {
     return (
-        <form action="/postagens" method="post" encType="application/x-www-form-urlencoded">
+        
+        <form action="/conteudo" method="post" encType="application/x-www-form-urlencoded" name="menssagem">
         <label>
             <span>{props.label}</span>
             <textarea
@@ -26,7 +27,6 @@ export const InputPost: React.FC<IInputPostProps> = (props) => {
             <input type="submit" />
         </label>
         </form>
-
         
     );
 }

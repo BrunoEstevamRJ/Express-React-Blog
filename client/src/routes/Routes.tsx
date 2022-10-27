@@ -8,6 +8,7 @@ import { About } from "../pages/About"
 import { Login } from "../pages/login/Login";
 import { Dashboard } from "../pages/dashboard/Dashboard";
 import { Postagens } from "../pages/postagens/Postagens";
+import { Conteudo } from "../pages/postagens/Conteudo";
 
 
 export function AppRoutes() {
@@ -19,6 +20,7 @@ export function AppRoutes() {
                 <Route path="/login" element={<Login />} />
                 <Route path="/pagina-inicial" element={<Dashboard />} />
                 <Route path="/Postagens" element={<Postagens />} />
+                <Route path="/conteudo" element={<Conteudo />} />
             </Routes>
         </Router>
     )
